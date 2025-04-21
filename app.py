@@ -94,14 +94,8 @@ if submitted:
     for i, q in enumerate(questions):
         st.markdown(f'<div class="question-card"><b>Q{i+1}.</b> {q}<br><i>Your answer:</i> <b>{options[responses[i]]}</b></div>', unsafe_allow_html=True)
     st.subheader("🧠 Neural Network Visualization")
-    st.markdown(
-    """
-    <div style="text-align: center;">
-        <img src="neural_net_simulation.gif" alt="Neural Net Animation" width="80%" />
-        <p><em>Neural Network Representation</em></p>
-    </div>
-    """,
-    unsafe_allow_html=True)
+    st.image("neural_net_simulation.gif", caption="Neural Network Representation", use_container_width=True)
+
 
     input_array = np.array(responses).reshape(1, -1)
     total_score = np.sum(input_array)
