@@ -93,8 +93,8 @@ if submitted:
     st.subheader("📝 Your Responses")
     for i, q in enumerate(questions):
         st.markdown(f'<div class="question-card"><b>Q{i+1}.</b> {q}<br><i>Your answer:</i> <b>{options[responses[i]]}</b></div>', unsafe_allow_html=True)
-        st.subheader("🧠 Neural Network Visualization")
-        st.image("network_epoch_0.png", caption="Neural Network Activation at Epoch 0", use_column_width=True)
+    st.subheader("🧠 Neural Network Visualization")
+    st.image("network_epoch_0.png", caption="Neural Network Activation at Epoch 0", use_column_width=True)
     input_array = np.array(responses).reshape(1, -1)
     total_score = np.sum(input_array)
     if total_score == 0:
