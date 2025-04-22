@@ -81,7 +81,7 @@ with st.form("risk_form"):
     responses = []
     for i, q in enumerate(questions):
         with st.container():
-            st.markdown(f'<div class="question-card"><b>Q{i+1}.</b></div>', unsafe_allow_html=True)
+            st.markdown(f'<div class="question-card"><b>Q{i+1}.</b>{q}</div>', unsafe_allow_html=True)
             ans = st.radio("", options, index=0, key=f"q{i+1}")
             responses.append(int(ans[-2]))
         # Update progress bar
