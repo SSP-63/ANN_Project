@@ -7,16 +7,16 @@ model = load_model("risk_model.h5")
 
 # Question bank (replace these with your actual questions)
 questions = [
-    "1. How often do you feel the urge to use drugs?",
-    "2. Do you use drugs to relieve stress?",
-    "3. Have you experienced withdrawal symptoms?",
-    "4. Do drugs interfere with your daily activities?",
-    "5. Have you tried and failed to quit using drugs?",
-    "6. Do you spend a lot of time thinking about drugs?",
-    "7. Have your relationships been affected by drug use?",
-    "8. Do you hide your drug use from others?",
-    "9. Have you used drugs in risky situations (e.g. driving)?",
-    "10. Do you feel dependent on drugs to function?"
+    "How often do you feel the urge to use drugs?",
+    "Do you use drugs to relieve stress?",
+    "Have you experienced withdrawal symptoms?",
+    "Do drugs interfere with your daily activities?",
+    "Have you tried and failed to quit using drugs?",
+    "Do you spend a lot of time thinking about drugs?",
+    "Have your relationships been affected by drug use?",
+    "Do you hide your drug use from others?",
+    "Have you used drugs in risky situations (e.g. driving)?",
+    "Do you feel dependent on drugs to function?"
 ]
 
 # Options
